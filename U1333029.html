@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>葉祥德的個人數位品牌網站</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #fcfbf7;
+            color: #333;
+        }
+        .brand-green { color: #3a7d6e; }
+        .bg-brand-green { background-color: #3a7d6e; }
+        .brand-orange { color: #d98866; }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #eef5f2 0%, #f4eae4 100%);
+            padding: 90px 0;
+            border-bottom: 5px solid #3a7d6e;
+        }
+        .card-custom {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #ffffff;
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+        }
+        .portfolio-img {
+            width: 100%;
+            height: auto;
+            max-height: 280px;
+            object-fit: cover;
+        }
+        .volunteer-img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .volunteer-img:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold brand-green" href="#">
+                <i class="bi bi-person-badge-fill me-2 brand-orange"></i>葉祥德 Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">教育與技能</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">專案作品</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#articles">專業見解與榮譽</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="91775.jpg" alt="葉祥德的個人大頭照" class="rounded-circle img-fluid border border-4 border-white shadow" style="width: 220px; height: 220px; object-fit: cover;" onerror="this.src='https://via.placeholder.com/220/3a7d6e/ffffff?text=91775.jpg'">
+                </div>
+                <div class="col-md-8 text-center text-md-start">
+                    <span class="badge bg-brand-green px-3 py-2 rounded-pill mb-3">歡迎蒞臨我的數位品牌</span>
+                    <h1 class="display-4 fw-bold brand-green">你好，我是葉祥德</h1>
+                    <p class="lead fw-bold text-muted">國立聯合大學 資訊管理學系</p>
+                    <hr class="my-3" style="max-width: 100px; border-top: 3px solid #d98866; margin: 0 auto 0 0;">
+                    <p class="lh-lg text-secondary">
+                        我目前就讀於聯大資管系。在課餘時間，我喜歡透過<strong>走路與健走</strong>來放鬆身心、鍛鍊專注力；同時，我也對 <strong>3C 科技產品</strong>抱持高度熱忱，常常自主研究各類硬體配置與科技趨勢。
+                    </p>
+                    <p class="lh-lg text-secondary">
+                        除了科技領域的探索，我也積極投入社會公益與志工服務，在實踐中體會環境永續與社會關懷。在實務專案中，我擅長進行「系統架構規劃與資訊流設計」，並主動將跨領域的商務溝通思維與資管技術結合。
+                    </p>
+                    <a href="#portfolio" class="btn bg-brand-green text-white mt-2 px-4 py-2 shadow-sm">瀏覽我的專案作品</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="education" class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4 brand-green"><i class="bi bi-mortarboard-fill me-2 brand-orange"></i>教育歷程 & 經驗</h2>
+                    
+                    <div class="card card-custom shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="fw-bold mb-0">國立聯合大學</h5>
+                                <span class="badge bg-success-subtle text-success">在學中</span>
+                            </div>
+                            <p class="text-muted small">資訊管理學系 | 學士學位</p>
+                            <p class="card-text text-secondary small">
+                                <strong>核心修習課程：</strong>資料結構與演算法、資料庫管理系統、網頁前端開發、網路配置與管理。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card card-custom shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="fw-bold mb-0 brand-green"><i class="bi bi-heart-fill me-2 brand-orange"></i>崇德青年志工服務社</h5>
+                                <span class="badge bg-primary-subtle text-primary">社團實踐</span>
+                            </div>
+                            
+                            <div class="mb-4 text-center">
+                                <img src="LINE_ALBUM_1140927 淨灘出隊@新豐紅樹林_260618_1.jpg" alt="國立聯合大學崇德青年社淨灘大合照" class="img-fluid volunteer-img" onerror="this.src='https://via.placeholder.com/600/eef5f2/3a7d6e?text=淨灘照片路徑錯誤'">
+                                <div class="small text-muted mt-2 fw-bold"><i class="bi bi-people-fill me-1"></i> 團隊參與崇德青年社環境永續淨灘活動大合照</div>
+                            </div>
+
+                            <p class="card-text text-secondary small lh-lg">
+                                積極參與崇德青年志工服務社的各項公益實踐。在號召同學共同前往海灘進行環境清理（淨灘）的過程中，不僅深刻培養了社會關懷、環境永續（SDGs）觀念，更在跨部門溝通、大型活動策劃與團隊凝聚力上累積了珍貴的軟實力。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4 brand-green"><i class="bi bi-code-slash me-2 brand-orange"></i>資管專業技能</h2>
+                    <p class="text-muted small mb-4">透過量化條列展示我在資訊領域的硬實力掌握度：</p>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-bold">系統與資訊流設計 (System & Data Flow)</span>
+                            <span class="fw-bold brand-green">90%</span>
+                        </div>
+                        <div class="progress" style="height: 12px;"><div class="progress-bar bg-brand-green" style="width: 90%"></div></div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>網頁開發 (HTML, CSS, Bootstrap RWD)</span>
+                            <span class="fw-bold text-success">85%</span>
+                        </div>
+                        <div class="progress" style="height: 12px;"><div class="progress-bar bg-success" style="width: 85%"></div></div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>3C 科技趨勢與軟硬體整合研究</span>
+                            <span class="fw-bold text-info">80%</span>
+                        </div>
+                        <div class="progress" style="height: 12px;"><div class="progress-bar bg-info" style="width: 80%"></div></div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>網路工程與路由配置 (Cisco, Static Routing, Trunking)</span>
+                            <span class="fw-bold text-danger">80%</span>
+                        </div>
+                        <div class="progress" style="height: 12px;"><div class="progress-bar bg-danger" style="width: 80%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold brand-green">專案作品作品集</h2>
+                <p class="text-muted">展示在學期間完成的核心成果，包含獨立開發與團隊競賽作品</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 card-custom shadow-sm overflow-hidden">
+                        <img src="famcare.png" class="card-img-top portfolio-img" alt="FamCare 團隊成員與分工圖" onerror="this.src='https://via.placeholder.com/600/eef5f2/3a7d6e?text=請確認左側圖名已改為famcare.png'">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0 brand-green">FamCare 智慧健康照護系統</h5>
+                                <span class="badge bg-warning text-dark">團隊競賽作品</span>
+                            </div>
+                            <p class="text-muted small"><strong>個人主要職責：系統與資訊流 (學號：U1333029)</strong></p>
+                            <p class="card-text text-secondary small lh-lg">
+                                參加「全國健康科技創新創意競賽」作品。核心理念為<strong>「陪伴，不該是一個人的孤軍奮戰，而是整個家庭的共同責任」</strong>。
+                                本人於團隊中專責**「系統與資訊流」**的架構規劃，精準串接前後端數據。圖中完整列出團隊七人小組的緊密合作與各自專業分工，展現出高度的團隊協作與跨領域專案管理能力。
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 px-4 pb-4">
+                            <span class="badge bg-secondary">系統與資訊流</span> <span class="badge bg-secondary">創新競賽</span> <span class="badge bg-secondary">團隊協作</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card h-100 card-custom shadow-sm border-start border-4 border-success">
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="fw-bold mb-0 brand-green"><i class="bi bi-laptop me-2"></i>個人數位品牌 RWD 網站開發</h5>
+                                    <span class="badge bg-success text-white">獨立作品</span>
+                                </div>
+                                <p class="text-muted small"><strong>開發技術：HTML5 / CSS3 / Bootstrap 5 / VS Code</strong></p>
+                                <p class="card-text text-secondary small lh-lg">
+                                    本網站為完全由我獨立開發的響應式個人作品集網站。精準利用 Bootstrap 的 Grid 系統打造完美的行動裝置與桌機自適應佈局（RWD），目前正透過 VS Code Live Preview 進行即時本地端調試與代碼優化。
+                                </p>
+                            </div>
+                            <div class="mt-4">
+                                <span class="badge bg-secondary">Bootstrap 5</span> <span class="badge bg-secondary">Live Preview</span> <span class="badge bg-secondary">響應式網頁</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-7">
+                    <h2 class="fw-bold mb-4 brand-green"><i class="bi bi-journal-text me-2 brand-orange"></i>專業見解 (Articles)</h2>
+                    <div class="p-4 bg-white rounded shadow-sm card-custom mb-3">
+                        <h5 class="fw-bold">數據流優化對於健康科技平台穩定度編排</h5>
+                        <p class="text-muted small">發表於 2026年6月 | 圖文專欄</p>
+                        <p class="card-text text-secondary small lh-lg">
+                            在開發健康科技系統（如 FamCare）時，資訊流與系統架構的流暢度直接決定了使用者體驗。
+                            當多部前端顯示器同時調取生理數據時，後端如何利用正確的資料結構隔離廣播域、配置封包路由，是防範 Packet Loss 的關鍵。
+                            唯有將環境永續與社會人文關懷與資管底層技術完美結合，才能打造出最具溫度的數位產品...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <h2 class="fw-bold mb-4 brand-green"><i class="bi bi-trophy-fill me-2 brand-orange"></i>獲獎與榮譽 (Awards)</h2>
+                    <ul class="list-group shadow-sm border-0">
+                        <li class="list-group-item d-flex align-items-center border-0 py-3 mb-2 card-custom shadow-sm">
+                            <i class="bi bi-patch-check-fill text-warning me-3 fs-3"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">全國健康科技創新創意競賽 - 參賽肯定</h6>
+                                <small class="text-muted">FamCare 專案系統與資訊流主要規劃人</small>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center border-0 py-3 card-custom shadow-sm">
+                            <i class="bi bi-patch-check-fill text-warning me-3 fs-3"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">崇德青年志工服務社 - 環境永續貢獻</h6>
+                                <small class="text-muted">積極投入社會關懷與實踐社會責任</small>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">© 2026 葉祥德的個人數位品牌 - 期末專案作品</p>
+            <p class="small text-muted">指導老師：沈俊宏 老師 | 國立聯合大學 資訊管理學系</p>
+            <p class="small text-muted">網站目錄與學號：U1333029</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
