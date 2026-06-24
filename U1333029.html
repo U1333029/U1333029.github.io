@@ -4,40 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>葉祥德的個人數位品牌網站</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    
     <style>
         body {
+            /* 使用無襯線字體，並優化中文字型呈現 */
             font-family: 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
+            /* 啟用平滑捲動效果（點擊導覽列時會流暢滑動） */
             scroll-behavior: smooth;
+            /* 網頁主背景：使用高質感暖白底色，避免純白刺眼 */
             background-color: #fcfbf7;
+            /* 主文字顏色：深灰色 */
             color: #333;
         }
-        .brand-green { color: #3a7d6e; }
+        /* 自訂品牌特色色彩 */
+        .brand-green { color: #3a7d6e; }      /* 品牌主色：質感綠 */
         .bg-brand-green { background-color: #3a7d6e; }
-        .brand-orange { color: #d98866; }
+        .brand-orange { color: #d98866; }     /* 品牌點綴色：溫暖橘 */
         
+        /* 01 自我介紹區塊的漸層背景與外距設定 */
         .hero-section {
             background: linear-gradient(135deg, #eef5f2 0%, #f4eae4 100%);
             padding: 90px 0;
-            border-bottom: 5px solid #3a7d6e;
+            border-bottom: 5px solid #3a7d6e; /* 底部品牌綠粗邊線 */
         }
+        
+        /* 作品與榮譽卡片的客製化樣式 */
         .card-custom {
             border: none;
             border-radius: 15px;
+            /* 設定動畫轉場效果：當滑鼠懸停時，陰影與位移會在 0.3 秒內平滑變化 */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             background: #ffffff;
         }
+        /* 滑鼠懸停特效 (Hover Effect)：卡片微幅上浮 5px 並加深陰影，增加網頁動態高級感 */
         .card-custom:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
         }
+        
+        /* 專案圖片比例裁剪設定 */
         .portfolio-img {
             width: 100%;
             height: auto;
             max-height: 280px;
-            object-fit: cover;
+            object-fit: cover; /* 保持圖片比例並自動裁切填滿 */
         }
+        
+        /* 志工活動照片的圓角與陰影 */
         .volunteer-img {
             width: 100%;
             border-radius: 12px;
@@ -45,7 +61,7 @@
             transition: transform 0.3s ease;
         }
         .volunteer-img:hover {
-            transform: scale(1.02);
+            transform: scale(1.02); /* 滑鼠懸停時微幅放大 1.02 倍 */
         }
     </style>
 </head>
@@ -74,7 +90,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="91775.jpg" alt="葉祥德的個人大頭照" class="rounded-circle img-fluid border border-4 border-white shadow" style="width: 220px; height: 220px; object-fit: cover;" onerror="this.src='https://via.placeholder.com/220/3a7d6e/ffffff?text=91775.jpg'">
+                    <img src="images/91775.jpg" alt="葉祥德的個人大頭照" class="rounded-circle img-fluid border border-4 border-white shadow" style="width: 220px; height: 220px; object-fit: cover;" onerror="this.src='https://via.placeholder.com/220/3a7d6e/ffffff?text=91775.jpg'">
                 </div>
                 <div class="col-md-8 text-center text-md-start">
                     <span class="badge bg-brand-green px-3 py-2 rounded-pill mb-3">歡迎蒞臨我的數位品牌</span>
@@ -96,6 +112,7 @@
     <section id="education" class="py-5">
         <div class="container">
             <div class="row g-5">
+                
                 <div class="col-lg-6">
                     <h2 class="fw-bold mb-4 brand-green"><i class="bi bi-mortarboard-fill me-2 brand-orange"></i>教育歷程 & 經驗</h2>
                     
@@ -120,12 +137,12 @@
                             </div>
                             
                             <div class="mb-4 text-center">
-                                <img src="LINE_ALBUM_1140927 淨灘出隊@新豐紅樹林_260618_1.jpg" alt="國立聯合大學崇德青年社淨灘大合照" class="img-fluid volunteer-img" onerror="this.src='https://via.placeholder.com/600/eef5f2/3a7d6e?text=淨灘照片路徑錯誤'">
+                                <img src="images/LINE_ALBUM_1140927 淨灘出隊@新豐紅樹林_260618_1.jpg" alt="國立聯合大學崇德青年社淨灘大合照" class="img-fluid volunteer-img" onerror="this.src='https://via.placeholder.com/600/eef5f2/3a7d6e?text=淨灘照片路徑錯誤'">
                                 <div class="small text-muted mt-2 fw-bold"><i class="bi bi-people-fill me-1"></i> 團隊參與崇德青年社環境永續淨灘活動大合照</div>
                             </div>
 
                             <p class="card-text text-secondary small lh-lg">
-                                積極參與崇德青年志工服務社的各項公益實踐。在號召同學共同前往海灘進行環境清理（淨灘）的過程中，不僅深刻培養了社會關懷、環境永續（SDGs）觀念，更在跨部門溝通、大型活動策劃與團隊凝聚力上累積了珍貴的軟實力。
+                                積極參與崇德青年志工服務社的各項公益實踐。在號召同學共同前往海灘進行環境清理（淨灘）的過程中，不僅深刻培養了社會關懷、環境永續（SDGs）觀念，更在大型活動策劃與團隊凝聚力上累積了珍貴的軟實力。
                             </p>
                         </div>
                     </div>
@@ -146,9 +163,9 @@
                     <div class="mb-4">
                         <div class="d-flex justify-content-between mb-1">
                             <span>網頁開發 (HTML, CSS, Bootstrap RWD)</span>
-                            <span class="fw-bold text-success">85%</span>
+                            <span class="fw-bold text-success">75%</span>
                         </div>
-                        <div class="progress" style="height: 12px;"><div class="progress-bar bg-success" style="width: 85%"></div></div>
+                        <div class="progress" style="height: 12px;"><div class="progress-bar bg-success" style="width: 75%"></div></div>
                     </div>
 
                     <div class="mb-4">
@@ -162,11 +179,12 @@
                     <div class="mb-4">
                         <div class="d-flex justify-content-between mb-1">
                             <span>網路工程與路由配置 (Cisco, Static Routing, Trunking)</span>
-                            <span class="fw-bold text-danger">80%</span>
+                            <span class="fw-bold text-danger">65%</span>
                         </div>
-                        <div class="progress" style="height: 12px;"><div class="progress-bar bg-danger" style="width: 80%"></div></div>
+                        <div class="progress" style="height: 12px;"><div class="progress-bar bg-danger" style="width: 65%"></div></div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -181,7 +199,7 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="card h-100 card-custom shadow-sm overflow-hidden">
-                        <img src="famcare.png" class="card-img-top portfolio-img" alt="FamCare 團隊成員與分工圖" onerror="this.src='https://via.placeholder.com/600/eef5f2/3a7d6e?text=請確認左側圖名已改為famcare.png'">
+                        <img src="images/famcare.png" class="card-img-top portfolio-img" alt="FamCare 團隊成員與分工圖" onerror="this.src='https://via.placeholder.com/600/eef5f2/3a7d6e?text=images/famcare.png+未找到'">
                         <div class="card-body p-4">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="fw-bold mb-0 brand-green">FamCare 智慧健康照護系統</h5>
@@ -219,12 +237,14 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
     <section id="articles" class="py-5">
         <div class="container">
             <div class="row g-5">
+                
                 <div class="col-md-7">
                     <h2 class="fw-bold mb-4 brand-green"><i class="bi bi-journal-text me-2 brand-orange"></i>專業見解 (Articles)</h2>
                     <div class="p-4 bg-white rounded shadow-sm card-custom mb-3">
@@ -257,6 +277,7 @@
                         </li>
                     </ul>
                 </div>
+                
             </div>
         </div>
     </section>
